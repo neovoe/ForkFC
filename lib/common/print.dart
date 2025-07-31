@@ -12,8 +12,8 @@ class CommonPrint {
     return _instance!;
   }
 
-  log(String? text) {
-    final payload = "[ForkFC] $text";
+  void log(String? text) {
+    final payload = '[APP] $text';
     debugPrint(payload);
     if (!globalState.isInit) {
       return;
