@@ -22,6 +22,13 @@
                 <a href="https://github.com/neovoe/ForkFC/releases/download/vVERSION/ForkFC-VERSION-windows-amd64.zip"><img src="https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows"></a>
             </td>
         </tr>
+        <tr>
+            <td>macOS</td>
+            <td>
+                <a href="https://github.com/neovoe/ForkFC/releases/download/vVERSION/ForkFC-VERSION-macos-arm64.dmg"><img src="https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple"></a><br>
+                <a href="https://github.com/neovoe/ForkFC/releases/download/vVERSION/ForkFC-VERSION-macos-amd64.dmg"><img src="https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple"></a><br>
+            </td>
+        </tr>
     </tbody>
 </table>
 
