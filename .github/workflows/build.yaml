@@ -19,6 +19,9 @@ jobs:
           - platform: macos
             os: macos-15-intel
             arch: amd64
+          - platform: macos
+            os: macos-latest
+            arch: arm64
 
     steps:
       - name: Setup rust
