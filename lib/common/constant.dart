@@ -11,13 +11,16 @@ import 'package:flutter/material.dart';
 
 const appName = 'ForkFC';
 const appHelperService = 'ForkFCHelperService';
+const coreManifestName = 'manifest.json';
 const coreName = 'clash.meta';
 const browserUa =
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 const packageName = 'com.follow.clash';
 final unixSocketPath = '/tmp/ForkFCSocket_${Random().nextInt(10000)}.sock';
-final windowsPipeName = '\\\\.\\pipe\\ForkFCCore_${Random().nextInt(10000)}';
+final windowsPipeName = '\\\\.\\pipe\\ForkFCCore_${_randomPipeId()}';
 const helperPort = 47890;
+const helperProtocolVersionHeader = 'x-forkfc-helper-protocol';
+const helperProtocolVersion = '6';
 const maxTextScale = 1.4;
 const minTextScale = 0.8;
 final baseInfoEdgeInsets = EdgeInsets.symmetric(
@@ -33,6 +36,14 @@ final listHeaderPadding = EdgeInsets.only(
 const sheetAppBarHeight = 68.0;
 
 const watchExecution = false;
+
+String _randomPipeId() {
+  final random = Random.secure();
+  return List.generate(
+    16,
+    (_) => random.nextInt(256).toRadixString(16).padLeft(2, '0'),
+  ).join();
+}
 
 final defaultTextScaleFactor =
     WidgetsBinding.instance.platformDispatcher.textScaleFactor;
@@ -56,7 +67,7 @@ const localhost = '127.0.0.1';
 const clashConfigKey = 'clash_config';
 const configKey = 'config';
 const double dialogCommonWidth = 300;
-const repository = 'neovoe/ForkFC';
+const repository = 'chen08209/FlClash';
 const defaultExternalController = '127.0.0.1:9090';
 const maxMobileWidth = 600;
 const maxLaptopWidth = 840;

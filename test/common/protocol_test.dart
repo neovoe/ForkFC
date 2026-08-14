@@ -5,11 +5,11 @@ void main() {
   group('ProtocolRegistrationPlan', () {
     test('builds registry writes for URL protocol registration', () {
       const plan = ProtocolRegistrationPlan(
-        scheme: 'flclash',
+        scheme: 'forkfc',
         executable: r'C:\Program Files\ForkFC\ForkFC.exe',
       );
 
-      expect(plan.protocolKey, r'Software\Classes\flclash');
+      expect(plan.protocolKey, r'Software\Classes\forkfc');
       expect(plan.commandKey, r'shell\open\command');
       expect(plan.protocolValueName, 'URL Protocol');
       expect(plan.protocolValue, '');
