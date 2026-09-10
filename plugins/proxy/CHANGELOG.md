@@ -7,4 +7,4 @@
 
 ## 0.0.1
 
-- Initial FlClash system proxy integration.
+- Initial ForkFC system proxy integration.

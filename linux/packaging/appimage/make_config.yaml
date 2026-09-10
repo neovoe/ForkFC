@@ -2,6 +2,11 @@ display_name: ForkFC
 
 icon: ./assets/images/icon.png
 
+supported_mime_type:
+  - x-scheme-handler/clash
+  - x-scheme-handler/clashmeta
+  - x-scheme-handler/forkfc
+
 keywords:
   - ForkFC
   - Clash

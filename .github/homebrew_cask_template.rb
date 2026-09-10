@@ -1,4 +1,4 @@
-cask "flclash" do
+cask "forkfc" do
   version "VERSION"
 
   on_macos do

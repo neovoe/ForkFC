@@ -16,4 +16,49 @@ void main() {
       expect(plan.command, r'"C:\Program Files\ForkFC\ForkFC.exe" "%1"');
     });
   });
+
+  group('LinuxProtocolRegistrationPlan', () {
+    const plan = LinuxProtocolRegistrationPlan(
+      schemes: protocolSchemes,
+      executable: '/home/me/Apps/ForkFC.AppImage',
+      applicationsDir: '/home/me/.local/share/applications',
+    );
+
+    test('writes a hidden desktop entry claiming every scheme', () {
+      expect(
+        plan.desktopPath,
+        '/home/me/.local/share/applications/forkfc-url-handler.desktop',
+      );
+      expect(
+        plan.desktopEntry,
+        '[Desktop Entry]\n'
+        'Type=Application\n'
+        'Name=ForkFC\n'
+        'NoDisplay=true\n'
+        'Exec="/home/me/Apps/ForkFC.AppImage" %u\n'
+        'MimeType=x-scheme-handler/clash;x-scheme-handler/clashmeta;'
+        'x-scheme-handler/forkfc;\n',
+      );
+    });
+
+    test('makes the entry the default handler for every scheme', () {
+      expect(plan.xdgMimeArguments, [
+        'default',
+        'forkfc-url-handler.desktop',
+        'x-scheme-handler/clash',
+        'x-scheme-handler/clashmeta',
+        'x-scheme-handler/forkfc',
+      ]);
+    });
+
+    test('escapes reserved characters in the executable path', () {
+      const plan = LinuxProtocolRegistrationPlan(
+        schemes: ['forkfc'],
+        executable: r'/opt/my "apps"/$HOME/100%/Fl`Clash\bin',
+        applicationsDir: '/tmp',
+      );
+
+      expect(plan.exec, r'"/opt/my \"apps\"/\$HOME/100%%/Fl\`Clash\\bin" %u');
+    });
+  });
 }
