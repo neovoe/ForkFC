@@ -40,7 +40,7 @@ Future<(int, String)> _request(
 
 void main() {
   group('lanAddress', () {
-    test('skips loopback, link-local and FlClash TUN addresses', () {
+    test('skips loopback, link-local and ForkFC TUN addresses', () {
       expect(
         LinkReceiver.lanAddress([
           for (final value in [

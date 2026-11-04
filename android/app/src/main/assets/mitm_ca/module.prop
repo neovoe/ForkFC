@@ -1,0 +1,6 @@
+id=forkfc_mitm_ca
+name=ForkFC MITM CA
+version=1
+versionCode=1
+author=ForkFC
+description=Adds ForkFC's MITM certificate to the system's trusted CAs.
