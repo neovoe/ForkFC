@@ -1,6 +1,6 @@
 <div align=center>
 
-[![Release Downloads](https://img.shields.io/github/downloads/neovoe/ForkFC/vVERSION/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/neovoe/ForkFC/vVERSION/)
+[![Release Downloads](https://img.shields.io/github/downloads/neovoe/ForkFC/TAG/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/neovoe/ForkFC/TAG/)
 
 </div>
 
@@ -18,15 +18,15 @@
         <tr>
             <td>Windows</td>
             <td>
-                <a href="https://github.com/neovoe/ForkFC/releases/download/vVERSION/ForkFC-VERSION-windows-amd64-setup.exe"><img src="https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows"></a><br>
-                <a href="https://github.com/neovoe/ForkFC/releases/download/vVERSION/ForkFC-VERSION-windows-amd64.zip"><img src="https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows"></a>
+                <a href="https://github.com/neovoe/ForkFC/releases/download/TAG/ForkFC-LINE-VERSION-windows-amd64-setup.exe"><img src="https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows"></a><br>
+                <a href="https://github.com/neovoe/ForkFC/releases/download/TAG/ForkFC-LINE-VERSION-windows-amd64-portable.zip"><img src="https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows"></a>
             </td>
         </tr>
         <tr>
             <td>macOS</td>
             <td>
-                <a href="https://github.com/neovoe/ForkFC/releases/download/vVERSION/ForkFC-VERSION-macos-arm64.dmg"><img src="https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple"></a><br>
-                <a href="https://github.com/neovoe/ForkFC/releases/download/vVERSION/ForkFC-VERSION-macos-amd64.dmg"><img src="https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple"></a><br>
+                <a href="https://github.com/neovoe/ForkFC/releases/download/TAG/ForkFC-LINE-VERSION-macos-arm64.dmg"><img src="https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple"></a><br>
+                <a href="https://github.com/neovoe/ForkFC/releases/download/TAG/ForkFC-LINE-VERSION-macos-amd64.dmg"><img src="https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple"></a><br>
             </td>
         </tr>
     </tbody>
